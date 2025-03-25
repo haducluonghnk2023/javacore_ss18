@@ -18,9 +18,9 @@ public class Ex08 {
         StringBuilder str = new StringBuilder();
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
             int value = entry.getKey();
-            String symbol = entry.getValue();
+            String n = entry.getValue();
             while (num >= value) {
-                str.append(symbol);
+                str.append(n);
                 num -= value;
             }
         }
